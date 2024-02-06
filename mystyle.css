@@ -1,0 +1,59 @@
+body, header {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+.header {
+    background-color: #f0f0f0;
+    padding: 25px;
+    margin-top: 0;
+}
+
+.header-links {
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.header-links a {
+    margin-left: 20px;
+    font-size: 30px;
+    text-decoration: none;
+    color: #000;
+}
+
+.main-content {
+    padding: 20px;
+    text-align: center;
+}
+
+.main-content section {
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+.main-content p {
+    font-size: 20px;
+}
+
+
+
+
+.footer {
+    line-height: 0.6;
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 8px;
+}
+
+.footer-content {
+    text-align: center;
+    font-size: 14px;
+}
+
+.footer img {
+    width: 20px;
+    height: auto; 
+}
