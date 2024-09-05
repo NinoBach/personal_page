@@ -12,7 +12,6 @@ body, header {
 .header-links {
     display: flex;
     justify-content: flex-end;
-
 }
 
 .header-links a {
@@ -21,21 +20,43 @@ body, header {
     text-decoration: none;
     color: #000;
 }
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('wallpaper_1.jpg'); /* Replace 'background-image.jpg' with your image path */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
 
-.main-content {
-    padding: 20px;
+/* Darken the background image */
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.5; /* Adjust the opacity to darken/lighten the image */
+    z-index: -1; /* Ensure the dark overlay is behind the text */
+}
+
+/* Text style */
+.centered-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffffb1; /* White color for text */
     text-align: center;
+    z-index: 1; /* Ensure the text is above the dark overlay */
+    font-size: large;
 }
-
-.main-content section {
-    margin: 0 auto;
-    max-width: 600px;
-}
-
-.main-content p {
-    font-size: 20px;
-}
-
 
 
 
@@ -54,6 +75,6 @@ body, header {
 }
 
 .footer img {
-    width: 20px;
+    width: 35px;
     height: auto; 
 }
